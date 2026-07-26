@@ -6,6 +6,7 @@ from playwright.sync_api import expect
 
 
 def test_login_01(page):
+    """Проверка авторизации"""
     login = LoginPage(page)
     login.open(BASE_URL)
     login.login(STANDARD_USER, PASSWORD)
